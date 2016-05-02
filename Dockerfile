@@ -2,7 +2,7 @@ FROM apache-php-proxy
 MAINTAINER Fabio Ferrari <fabio@particles.io>
 
 # Install required packages
-apt-get install wget unzip gcc make dh-autoreconf apache2-dev
+RUN apt-get install wget unzip gcc make dh-autoreconf apache2-dev
 
 # Install IP2Location Apache Module 
 RUN wget http://www.ip2location.com/downloads/ip2location-c-7.0.2.tar.gz && \
