@@ -18,7 +18,7 @@ require_once 'IP2Location.php';
 */
 $db = new \IP2Location\Database('./databases/IP2LOCATION-LITE-DB1.BIN', \IP2Location\Database::FILE_IO);
 
-$records = $db->lookup('<?php echo $_SERVER['REMOTE_ADDR'] ?>', \IP2Location\Database::ALL);
+$records = $db->lookup('".$_SERVER['REMOTE_ADDR']."', \IP2Location\Database::ALL);
 
 echo '<pre>';
 echo 'IP Number             : ' . $records['ipNumber'] . "\n";
