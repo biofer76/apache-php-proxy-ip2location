@@ -20,7 +20,7 @@ copy example ip2location folder which includes php scripts and a sample database
 Check IP geographical information:  
 http://hostname-ip/ip2location/example.php
 
-Issues with IP2Location?
+**Issues with IP2Location?**  
 Check if IP2Location module is loaded:
 
     docker exec apache /usr/sbin/apachectl -t -D DUMP_MODULES | grep IP2Location
