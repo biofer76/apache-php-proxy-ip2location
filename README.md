@@ -2,10 +2,10 @@
 Apache Web Server, PHP Engine, Apache Proxy modules and IP2Location module
 --------------------------------  
 
-Apache Web Server and PHP Engine from apache-php  
+Apache Web Server and PHP Engine from *apache-php* image  
 https://github.com/fabio-particles/apache-php
 
-Apache Proxy modules from apache-php-proxy  
+Apache Proxy modules from *apache-php-proxy* image  
 https://github.com/fabio-particles/apache-php-proxy
 
 **IP2Location module**  
