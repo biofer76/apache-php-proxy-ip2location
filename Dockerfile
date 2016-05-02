@@ -16,7 +16,8 @@ RUN autoreconf -i -v --force && \
     make && make install && make clean
 
 WORKDIR ../ip2location-apache-7.0.1
-RUN apxs2 -i -a -L /usr/local/lib -I ../ip2location-c-7.0.2/libIP2Location/ -lIP2Location -c mod_ip2location.c
+RUN apxs2 -i -a -L /usr/local/lib -I ../ip2location-c-7.0.2/libIP2Location/ -lIP2Location -c mod_ip2location.c \
+    a2enmod IP2Location
 
 WORKDIR ../
 RUN rm -f ip2location-c-7.0.2.tar.gz ip2location-apache-7.0.1.zip
