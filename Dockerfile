@@ -22,6 +22,8 @@ RUN apxs2 -i -a -L /usr/local/lib -I ../ip2location-c-7.0.2/libIP2Location/ -lIP
 WORKDIR ../
 RUN rm -f ip2location-c-7.0.2.tar.gz ip2location-apache-7.0.1.zip
 
+ENV LD_LIBRARY_PATH /usr/local/bin
+
 
     
 
