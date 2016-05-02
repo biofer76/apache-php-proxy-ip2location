@@ -1,4 +1,4 @@
-FROM apache-php-proxy
+FROM particles/apache-php-proxy
 MAINTAINER Fabio Ferrari <fabio@particles.io>
 
 # Install required packages
