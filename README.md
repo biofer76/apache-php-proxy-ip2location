@@ -27,4 +27,17 @@ Check if IP2Location module is loaded:
 
     docker exec apache /usr/sbin/apachectl -t -D DUMP_MODULES | grep IP2Location
 
+You can configure IP2Location settings in Apache vHost file:
+
+    <VirtualHost>
+    [...]
+    <IfModule mod_ip2location.c>
+            IP2LocationEnable On
+            IP2LocationDetectProxy Off
+            IP2LocationSetmode ALL
+            IP2LocationDBFile /app/apache2/www/ip2location/databases/IP-COUNTRY-SAMPLE.BIN
+    </IfModule>
+    [...]
+    </VirtualHost>
+
 > Written with [StackEdit](https://stackedit.io/).
