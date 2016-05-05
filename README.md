@@ -22,6 +22,15 @@ copy example ip2location folder which includes php scripts and a sample BIN data
 Check IP geographical information:  
 http://hostname-ip/ip2location/example.php
 
+**Run container**
+
+    docker run -d --name apache-php-proxy-ip2location \
+    -v /app/apache2/logs:/var/log/apache2 \
+    -v /app/apache2/vhost:/etc/apache2/vhosts \
+    -v /app/apache2/www:/var/www/html \
+    -p 80:80 \
+    apache-php-proxy-ip2location
+
 **Issues with IP2Location?**  
 Check if IP2Location module is loaded:
 
